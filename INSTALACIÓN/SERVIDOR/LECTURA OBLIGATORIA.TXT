@@ -1,0 +1,13 @@
+========================
+BUILD OUTPUT DESCRIPTION
+========================
+
+Para poder usar el servidor tiene que cumplir antes unos requisitos mínimos:
+
+- Tener instalado en local mysql con un usuario y contraseña creados.
+	Usuario: surfschool
+	Contraseña: surfschool
+
+- Tener creada una base de datos que se llame "surfschools"
+
+- Tener los dos ficheros .sql que se encuentran en esta carpeta importados en esa bd.

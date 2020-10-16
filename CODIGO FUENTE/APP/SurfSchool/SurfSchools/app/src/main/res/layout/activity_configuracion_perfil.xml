@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_configuracion_perfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/wallet_highlighted_text_holo_dark"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="activity.ConfiguracionPerfil">
+
+    <TextView
+        android:text="Telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:id="@+id/textView11"
+        android:textColor="@color/cast_expanded_controller_background_color" />
+
+    <TextView
+        android:text="Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etTelefono"
+        android:layout_alignRight="@+id/textView11"
+        android:layout_alignEnd="@+id/textView11"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textView14"
+        android:textColor="@color/cast_expanded_controller_background_color" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/textView14"
+        android:layout_alignLeft="@+id/etTelefono"
+        android:layout_alignStart="@+id/etTelefono"
+        android:layout_marginTop="15dp"
+        android:id="@+id/etNombre" />
+
+    <TextView
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/etNombre"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14"
+        android:textColor="@color/cast_expanded_controller_background_color" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etEmail"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/etNombre"
+        android:layout_alignStart="@+id/etNombre" />
+
+    <TextView
+        android:text="Nueva contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/etEmail"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:textColor="@color/cast_expanded_controller_background_color" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="21dp"
+        android:id="@+id/etContraseña"
+        android:layout_below="@+id/textView17"
+        android:layout_alignLeft="@+id/etEmail"
+        android:layout_alignStart="@+id/etEmail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etTelefono"
+        android:layout_below="@+id/textView11"
+        android:layout_toRightOf="@+id/textView14"
+        android:layout_toEndOf="@+id/textView14"
+        android:layout_marginTop="14dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbTelefono"
+        android:layout_alignTop="@+id/etTelefono"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbNombre"
+        android:layout_alignTop="@+id/etNombre"
+        android:layout_alignLeft="@+id/cbTelefono"
+        android:layout_alignStart="@+id/cbTelefono" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbEmail"
+        android:layout_alignBottom="@+id/etEmail"
+        android:layout_alignLeft="@+id/cbNombre"
+        android:layout_alignStart="@+id/cbNombre" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbContraseña"
+        android:layout_alignTop="@+id/etContraseña"
+        android:layout_alignLeft="@+id/cbEmail"
+        android:layout_alignStart="@+id/cbEmail" />
+
+    <Button
+        android:text="Guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etContraseña"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/bGuardar" />
+
+</RelativeLayout>

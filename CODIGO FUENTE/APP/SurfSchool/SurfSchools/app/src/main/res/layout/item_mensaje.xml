@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wallet_highlighted_text_holo_dark"
+    android:layout_margin="15dp"
+    android:weightSum="1">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txAsunto"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/cast_expanded_controller_background_color" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.37"
+            android:text="Escuela:"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txEscuela"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.72"
+            android:text="OnlyLocals"
+            android:textAlignment="gravity"
+            android:textColor="@color/cast_intro_overlay_background_color"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.25"
+            android:text="Fecha:"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txFecha"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.25"
+            android:text="12/07/2017"
+            android:textAlignment="gravity"
+            android:textColor="@color/cast_intro_overlay_background_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txContenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textColor="@color/cast_intro_overlay_background_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bVisto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.95"
+            android:background="@drawable/mybutton"
+            android:text="VISTO" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp" />
+
+</LinearLayout>

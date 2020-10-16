@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_escuela_usuario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/wallet_highlighted_text_holo_dark"
+    tools:context="activity.EscuelaUsuario">
+
+    <Button
+        android:text="Alquiler surf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:id="@+id/bSurf"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+
+        android:background="@drawable/mybutton"
+        android:layout_alignParentEnd="true"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <Button
+        android:text="Alquilar Kayak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bKayak"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_alignBaseline="@+id/bSurf"
+        android:layout_alignBottom="@+id/bSurf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/mybutton"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <Button
+        android:text="unfollow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/bDejarSeguir"
+        android:background="@drawable/mybutton2" />
+
+    <TextView
+        android:text="SE PUEDE SURFEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txPosibilidad"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_green_light"
+        android:layout_marginBottom="37dp"
+        android:layout_above="@+id/bKayak"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/back"
+        android:padding="4dp" />
+
+    <Button
+        android:text="EXCURSIONES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/bExc"
+
+        android:background="@drawable/mybutton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_below="@+id/bKayak"
+        android:layout_alignLeft="@+id/bKayak"
+        android:layout_alignStart="@+id/bKayak"
+        android:layout_alignRight="@+id/bSurf"
+        android:layout_alignEnd="@+id/bSurf" />
+
+    <Button
+        android:text="CLASES INDIVIDUALES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/mybutton"
+        android:id="@+id/bIndv"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/bExc"
+        android:layout_alignLeft="@+id/bExc"
+        android:layout_alignStart="@+id/bExc"
+        android:layout_alignRight="@+id/bExc"
+        android:layout_alignEnd="@+id/bExc" />
+
+    <Button
+        android:text="CLASES COLECTIVAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/mybutton"
+        android:id="@+id/bClases"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_below="@+id/bIndv"
+        android:layout_marginTop="26dp"
+        android:layout_alignRight="@+id/bIndv"
+        android:layout_alignEnd="@+id/bIndv"
+        android:layout_alignLeft="@+id/bIndv"
+        android:layout_alignStart="@+id/bIndv" />
+</RelativeLayout>

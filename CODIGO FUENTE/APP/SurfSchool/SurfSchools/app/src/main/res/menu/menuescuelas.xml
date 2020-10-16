@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="activity.MisEscuelas">
+    <item android:id="@+id/ver_mapa" android:title="Mapa"
+        android:orderInCategory="100" />
+    <item android:id="@+id/misalquileres" android:title="Alquileres"
+        android:orderInCategory="100" />
+    <item android:id="@+id/misexcursiones" android:title="Excursiones"
+        android:orderInCategory="100" />
+    <item android:id="@+id/miscolectivas" android:title="Clases Colectivas"
+        android:orderInCategory="100" />
+    <item android:id="@+id/misind" android:title="Clases Individuales"
+        android:orderInCategory="100" />
+    <item android:id="@+id/confperfil" android:title="Configuración Perfil"
+        android:orderInCategory="100" />
+    <item android:id="@+id/mensajes" android:title="Mensajes"
+        android:orderInCategory="100" />
+
+
+    <item android:id="@+id/cerrar_sesion" android:title="Cerrar sesión"
+        android:orderInCategory="100" />
+    <item android:id="@+id/actualizar" android:title="Actualizar"
+        android:orderInCategory="100" />
+
+</menu>
